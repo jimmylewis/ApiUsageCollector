@@ -34,32 +34,47 @@ namespace DetectReferences
         {
             AppDomain.CurrentDomain.ReflectionOnlyAssemblyResolve += ResolveAssembly;
 
-            if (args.Length < 0)
+            if (args.Length < 1)
             {
                 Console.WriteLine("Please specify an install path");
                 return;
             }
 
-            string rootPath = args[0];
-
-            foreach (string file in Directory.EnumerateFiles(rootPath, "*.dll", SearchOption.AllDirectories))
+            if (args.Length < 1)
             {
-                if (_editorAssemblies.Contains(Path.GetFileNameWithoutExtension(file)))
+                Console.WriteLine("Please specify a path for the output file");
+                return;
+            }
+
+            string rootPath = args[0];
+            string outputFile = args[1];
+
+            using (FileStream outStream = new FileStream(outputFile, FileMode.Create))
+            using (TextWriter tw = new StreamWriter(outStream))
+            {
+                foreach (string file in Directory.EnumerateFiles(rootPath, "*.dll", SearchOption.AllDirectories))
                 {
-                    continue;
-                }
-
-                IEnumerable<string> editorDependencies = FindEditorDependencies(file);
-
-                if (editorDependencies.Any())
-                {
-                    Console.WriteLine(file);
-
-                    foreach (string editorDependency in editorDependencies)
+                    if (_editorAssemblies.Contains(Path.GetFileNameWithoutExtension(file)))
                     {
-                        Console.WriteLine($"  {editorDependency}");
+                        continue;
                     }
+
+                    IEnumerable<string> editorDependencies = FindEditorDependencies(file);
+
+                    if (editorDependencies.Any())
+                    {
+                        tw.WriteLine(file);
+
+                        foreach (string editorDependency in editorDependencies)
+                        {
+                            tw.WriteLine($"  {editorDependency}");
+                        }
+
+                    }
+
                 }
+
+                tw.Flush();
             }
         }
 
@@ -100,7 +115,7 @@ namespace DetectReferences
 
             try
             {
-                Assembly assembly = Assembly.LoadFrom(file);
+                Assembly assembly = Assembly.ReflectionOnlyLoadFrom(file);
 
                 AssemblyName[] references = assembly.GetReferencedAssemblies();
 
