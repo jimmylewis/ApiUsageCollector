@@ -1,0 +1,139 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Microsoft.VisualStudio.VC.dll
+  Microsoft.JSON.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\CommonExtensions\Microsoft\CMake\Microsoft.VisualStudio.CMake.Package.dll
+  Microsoft.JSON.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\CommonExtensions\Microsoft\CMake\Microsoft.VisualStudio.CMake.Project.dll
+  Microsoft.JSON.Core
+  Microsoft.Web.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\CommonExtensions\Microsoft\OpenFolder\Microsoft.VisualStudio.Workspace.VSIntegration.dll
+  Microsoft.JSON.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\CommonExtensions\Microsoft\TypeScript\Microsoft.VisualStudio.LanguageServices.TypeScript.dll
+  Microsoft.VisualStudio.JSON.Package
+  Microsoft.Web.Editor
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\CommonExtensions\Microsoft\WebClient\Project System\Microsoft.VisualStudio.JavaScript.Project.dll
+  Microsoft.CSS.Editor
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Python\Django\Microsoft.PythonTools.Django.dll
+  Microsoft.VisualStudio.Html.Package
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+  Microsoft.Html.Editor
+  Microsoft.Web.Editor
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Web Tools\Editors\Microsoft.VisualStudio.Web.Extensions.dll
+  Microsoft.CSS.Editor
+  Microsoft.CSS.Core
+  Microsoft.Web.Editor
+  Microsoft.VisualStudio.Web.Editor.Package
+  Microsoft.Web.Core
+  Microsoft.VisualStudio.Html.Package
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Web Tools\Library Manager\Microsoft.Web.LibraryManager.Vsix.dll
+  Microsoft.JSON.Editor
+  Microsoft.JSON.Core
+  Microsoft.Web.Editor
+  Microsoft.VisualStudio.JSON.Package
+  Microsoft.CSS.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Web Tools\Page Inspector\Microsoft.VisualStudio.Web.PageInspector.Package.dll
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+  Microsoft.CSS.Core
+  Microsoft.CSS.Editor
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Windows Azure Tools\Resource Manager\Microsoft.VisualStudio.Azure.ResourceManager.Common.dll
+  Microsoft.JSON.Core
+  Microsoft.Web.Core
+  Microsoft.CSS.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Windows Azure Tools\Resource Manager\Microsoft.VisualStudio.Azure.ResourceManager.Deployment.dll
+  Microsoft.JSON.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\Microsoft\Windows Azure Tools\Resource Manager\Microsoft.VisualStudio.Azure.ResourceManager.Extensions.dll
+  Microsoft.JSON.Editor
+  Microsoft.JSON.Core
+  Microsoft.CSS.Core
+  Microsoft.Web.Core
+C:\Program Files (x86)\Microsoft Visual Studio\16\Preview\Common7\IDE\Extensions\nrbobc4x.hpy\Microsoft.VisualStudio.ConnectedServices.Azure.Storage.dll
+  Microsoft.JSON.Core
+  Microsoft.CSS.Core
+E:\Extensions_15\DEVSENSE\PHP Tools for Visual Studio 2017\1.29.10958\Devsense.PHP.Editor.Laravel.dll
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+  Microsoft.Html.Editor
+  Microsoft.Web.Editor
+E:\Extensions_15\DEVSENSE\PHP Tools for Visual Studio 2017\1.29.10958\Devsense.VisualStudio.Editor.Htmlx.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+  Microsoft.Web.Editor
+E:\Extensions_15\DEVSENSE\PHP Tools for Visual Studio 2017\1.29.10958\Devsense.VisualStudio.Smarty.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+  Microsoft.Web.Core
+  Microsoft.VisualStudio.Html.Package
+E:\Extensions_15\DEVSENSE\PHP Tools for Visual Studio 2017\1.29.10958\Devsense.VisualStudio.Twig.dll
+  Microsoft.VisualStudio.Html.Package
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+  Microsoft.Web.Core
+E:\Extensions_15\DotVVM\DotVVM for Visual Studio\2.0.117.0\DotVVM.Integration.VisualStudio.Diagnostics.VS2017.dll
+  Microsoft.Web.Editor
+E:\Extensions_15\DotVVM\DotVVM for Visual Studio\2.0.117.0\DotVVM.Integration.VisualStudio.DotvvmWizard.dll
+  Microsoft.Web.Editor
+E:\Extensions_15\DotVVM\DotVVM for Visual Studio\2.0.117.0\DotVVM.Integration.VisualStudio.VS2017.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+  Microsoft.Web.Editor
+E:\Extensions_15\DotVVM\DotVVM for Visual Studio\2.0.117.0\Microsoft.VisualStudio.Web.Extensions.dll
+  Microsoft.CSS.Editor
+  Microsoft.CSS.Core
+  Microsoft.Web.Editor
+  Microsoft.VisualStudio.Web.Editor.Package
+  Microsoft.Web.Core
+  Microsoft.VisualStudio.Html.Package
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+E:\Extensions_15\Mads Kristensen\Browser Link Inspector 2017\0.5.4\BrowserLinkInspector.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Core
+E:\Extensions_15\Mads Kristensen\CSS Tools\1.1.23\CssTools.dll
+  Microsoft.Web.Editor
+  Microsoft.CSS.Core
+  Microsoft.CSS.Editor
+E:\Extensions_15\Mads Kristensen\Google AMP Tools\1.1.5\GoogleAmpSchema.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+E:\Extensions_15\Mads Kristensen\HTML Tools\1.0.3\HtmlTools.dll
+  Microsoft.Html.Core
+  Microsoft.Html.Editor
+  Microsoft.CSS.Core
+  Microsoft.Web.Core
+  Microsoft.Web.Editor
+  Microsoft.CSS.Editor
+E:\Extensions_15\Mads Kristensen\Vue.js Pack 2017\1.1.8\VuePack.dll
+  Microsoft.Html.Editor
+E:\Extensions_15\Michal Zurek\MySQL Editor for Visual Studio\0.1.2\MySql.VisualStudio.dll
+  Microsoft.VisualStudio.Html.Package
+E:\Extensions_15\NeuroSpeech\Web Atoms JS Power Tools 2017\1.59\VSAtomsTools.dll
+  Microsoft.Html.Core
+  Microsoft.Html.Editor
+  Microsoft.Web.Core
+E:\Extensions_15\onyXMaster\ASP.NET Razor syntax 'vHalfNext'\2.8\AspNet.Razor-vHalfNext.dll
+  Microsoft.Html.Editor
+  Microsoft.Web.Core
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+E:\Extensions_15\Ramon F Mendes\OmniCode for VS 2017\2.16\OmniCode.dll
+  Microsoft.Web.Core
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+E:\Extensions_15\Rion Williams\Glyphfriend 2017\2.1.0.2\Glyphfriend.VS2017.dll
+  Microsoft.Html.Editor
+E:\Extensions_15\Slawomir Rosiek\Angular Productivity Tools\0.5.8\Rosieks.VisualStudio.Angular.dll
+  Microsoft.Html.Editor
+  Microsoft.Html.Core
+  Microsoft.Web.Editor
+
+
