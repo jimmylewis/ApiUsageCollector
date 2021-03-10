@@ -56,6 +56,7 @@ namespace CollectReferences
 
             TextReader inputReader = File.OpenText(args[0]);
 
+
             string line;
             while ((line = inputReader.ReadLine()) != null)
             {
@@ -67,39 +68,66 @@ namespace CollectReferences
                 }
             }
 
-            foreach (KeyValuePair<string, List<TypeReference>> assembly in AllReferences.OrderBy(x => x.Key))
+            var collateTypeUsageByExtension = new Dictionary<string, List<string>>();
+            var collateMessageUsageByExtension = new Dictionary<string, List<string>>();
+
+            using (FileStream typeUsageStream = new FileStream("ExtensionUsageByType.txt", FileMode.Create))
+            using (StreamWriter typeUsageWriter = new StreamWriter(typeUsageStream))
             {
-                if (assembly.Value.Count > 0)
+                foreach (KeyValuePair<string, List<TypeReference>> assembly in AllReferences.OrderBy(x => x.Key))
                 {
-                    Console.WriteLine("Types from {0}", assembly.Key);
-
-                    foreach (TypeReference reference in assembly.Value.OrderBy(x => x.Name))
+                    if (assembly.Value.Count > 0)
                     {
-                        Console.Write("    {0} (", reference.Name);
-                        bool comma = false;
-                        foreach (string source in reference.Sources.OrderBy(x => x))
-                        {
-                            if (comma)
-                            {
-                                Console.Write(", ");
-                            }
-                            else
-                            {
-                                comma = true;
-                            }
+                        typeUsageWriter.WriteLine("Types from {0}", assembly.Key);
 
-                            Console.Write(source);
-                        }
-                        Console.Write(")");
-                        Console.WriteLine();
-
-                        foreach (string member in reference.Members.OrderBy(x => x))
+                        foreach (TypeReference reference in assembly.Value.OrderBy(x => x.Name))
                         {
-                            Console.WriteLine("        {0}", member);
+                            typeUsageWriter.Write("    {0} (", reference.Name);
+                            bool comma = false;
+                            foreach (string source in reference.Sources.OrderBy(x => x))
+                            {
+                                if (comma)
+                                {
+                                    typeUsageWriter.Write(", ");
+                                }
+                                else
+                                {
+                                    comma = true;
+                                }
+
+                                typeUsageWriter.Write(source);
+
+                                if (!collateTypeUsageByExtension.ContainsKey(source))
+                                {
+                                    collateTypeUsageByExtension[source] = new List<string>();
+                                }
+                                collateTypeUsageByExtension[source].Add(reference.Name);
+                            }
+                            typeUsageWriter.Write(")");
+                            typeUsageWriter.WriteLine();
+
+                            foreach (string member in reference.Members.OrderBy(x => x))
+                            {
+                                typeUsageWriter.WriteLine("        {0}", member);
+                            }
                         }
+
+                        typeUsageWriter.WriteLine();
                     }
+                }
+            }
 
-                    Console.WriteLine();
+            using (FileStream typeUsageStream = new FileStream("TypeUsageByExtension.txt", FileMode.Create))
+            using (StreamWriter typeUsageWriter = new StreamWriter(typeUsageStream))
+            {
+
+                foreach (KeyValuePair<string, List<string>> extensionUsage in collateTypeUsageByExtension)
+                {
+                    typeUsageWriter.WriteLine("Types used by: " + extensionUsage.Key);
+                    foreach (var type in extensionUsage.Value)
+                    {
+                        typeUsageWriter.WriteLine("    {0}", type);
+                    }
                 }
             }
         }
