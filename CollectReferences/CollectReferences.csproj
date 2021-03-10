@@ -51,5 +51,11 @@
   <ItemGroup>
     <Content Include="Sample.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MetadataTools\src\RefDump\RefDump.csproj">
+      <Project>{5093e2d3-4fc5-45a3-a882-0823b67861d3}</Project>
+      <Name>RefDump</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

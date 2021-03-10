@@ -1,0 +1,3 @@
+[submodule "MetadataTools"]
+	path = MetadataTools
+	url = https://github.com/KirillOsenkov/MetadataTools.git

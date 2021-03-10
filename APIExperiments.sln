@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectReferences", "DetectR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectReferences", "CollectReferences\CollectReferences.csproj", "{4DF7E364-D4C5-45FC-AA5F-29BAC31D180F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefDump", "..\MetadataTools\src\RefDump\RefDump.csproj", "{5093E2D3-4FC5-45A3-A882-0823B67861D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4DF7E364-D4C5-45FC-AA5F-29BAC31D180F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DF7E364-D4C5-45FC-AA5F-29BAC31D180F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DF7E364-D4C5-45FC-AA5F-29BAC31D180F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5093E2D3-4FC5-45A3-A882-0823B67861D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5093E2D3-4FC5-45A3-A882-0823B67861D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5093E2D3-4FC5-45A3-A882-0823B67861D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5093E2D3-4FC5-45A3-A882-0823B67861D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

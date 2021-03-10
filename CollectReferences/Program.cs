@@ -165,13 +165,14 @@ namespace CollectReferences
 
             try
             {
+                string thisExeDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
                 Process process = new Process
                 {
                     StartInfo = new ProcessStartInfo
                     {
                         Arguments = $"\"{line}\" -t -m \"{tempFile}\"",
                         CreateNoWindow = true,
-                        FileName = @"C:\MetadataTools\src\RefDump\bin\Debug\net461\RefDump.exe",
+                        FileName = Path.Combine(thisExeDirectory, @"RefDump.exe"),
                         UseShellExecute = false,
                     },
                 };
